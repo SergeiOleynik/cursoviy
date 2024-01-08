@@ -1,0 +1,55 @@
+.heroImage7{
+    width: 100%;
+    margin: 50px auto;
+    display: grid;
+    justify-content: center;     
+
+    div{
+        width: 935px;
+        border-radius: 16px;
+        background: #DCE5E2;   
+        padding-bottom: 50px;                
+    }
+    h2{
+        color: #000;
+        text-align: center;
+        font-family: $headStyle;
+        font-size: 42px;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    p{
+        margin-top: 0;
+        color: #000;
+        text-align: center;
+        font-family: $textStyle;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    img{
+        width: 230px;
+        margin-left: 350px;       
+    }
+    form#btn{
+        width: 285px;      
+        margin: 10px auto; 
+        border: 1px solid grey;
+        border-radius: 20px;                
+    }
+    input{             
+        border: none; 
+        outline: none;         
+        background: #DCE5E2;                   
+    }
+    input#email{
+        width: 187px;
+        margin-left: 16px;
+    }
+    input#submit{
+        width: 74px;
+        border-radius: 0 20px 20px 0;
+        background-color: grey;
+        color: white;
+        padding: 12px;         
+    } 
+}

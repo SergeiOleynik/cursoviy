@@ -1,0 +1,108 @@
+.heroImage1 {
+    width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,300px);
+    grid-template-areas: 
+    "itm1  itm2 itm3" 
+    "itm1  itm2 itm3" 
+    "itm4 .  ." 
+    ;
+    gap: 20px;  
+
+    .grid{
+        display: grid;
+    }      
+    .color{
+        background-color: #e4dede9d; 
+        border-radius: 20px;
+        padding-left: 40px;
+        animation: bgColor 5s infinite alternate;
+    }
+    @keyframes bgColor{
+        0%{
+            background-color: #e4dede9d; 
+        }
+        50%{
+            background-color: rgba(255, 0, 0, 0.5);
+        }
+        100%{
+            background-color: rgba(0, 0, 255, 0.5);
+        }  
+    } 
+    
+    p{
+        width: 60px;    
+        font-family: $textStyle; 
+        font-size: 15px;
+        font-weight: 400;       
+    }
+    h3{
+        width: 240px;      
+        font-family: $headStyle;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 38px; 
+    }
+    
+    .item1{
+       height: 85%;
+       grid-area: itm1;   
+            p#laptop{
+                position: relative;
+                bottom: 20px;
+                left: 400px;      
+            } 
+            h3#laptop{
+                position: relative;
+                left: 280px;
+                bottom: 60px;
+            }           
+    }
+    .item2{ 
+        height: 85%;      
+        grid-area: itm2;  
+        grid-row-end: 4;
+        justify-content: end;
+        padding-top: 100px;
+        p#phone{
+            position: relative;
+            left: 90px;             
+        }
+        h3#phone{
+            position: relative;
+            left: 40px; 
+            bottom: 120px;       
+        }   
+    }
+    .item3{ 
+        height: 95%;  
+        grid-area: itm3;
+        grid-row-end: 4; 
+        justify-content: end;
+        p#tab{
+            position: relative;
+            left: 100px;
+            top: 140px; 
+        }
+        h3#tab{
+            position: relative;
+            left: 20px;           
+        }
+    }
+
+    .item4{         
+        grid-area: itm4;          
+        p#watch{
+            position: relative;
+            bottom: 125px;        
+            left: 460px;     
+        }
+        h3#watch{
+            position: relative;
+            bottom: 170px;       
+            left: 390px;
+        }
+    }  
+}

@@ -1,0 +1,44 @@
+.heroImageTop {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 792px 712px 712px;
+  grid-gap: 10px;
+}
+.heroImageTop .image {
+  background-color: rgba(247, 247, 247, 0.836);
+}
+.heroImageTop .item14 {
+  display: grid;
+  grid-template-rows: 472px 50px 270px;
+  gap: 10px;
+}
+.heroImageTop .item14 img {
+  margin-left: 40px;
+}
+.heroImageTop .item2, .heroImageTop .item3 img {
+  margin-left: 40px;
+  padding-top: 140px;
+}
+.heroImageTop p {
+  width: 60px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.heroImageTop h3 {
+  width: 192px;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+.heroImageTop p#laptop {
+  position: relative;
+  bottom: 60px;
+  left: 520px;
+}
+.heroImageTop h3#laptop {
+  position: relative;
+  left: 400px;
+  bottom: 80px;
+}/*# sourceMappingURL=heroImageTop.css.map */

@@ -1,0 +1,8 @@
+.heroLink2 {
+  width: 100%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 118px 109px 91px 89px;
+  grid-gap: 10px;
+  justify-content: center;
+}/*# sourceMappingURL=heroLink2.css.map */

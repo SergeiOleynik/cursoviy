@@ -1,0 +1,119 @@
+@media screen and (max-width: 992px) {
+  .footer1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer1 p,
+  .footer1 a {
+    font-size: 12px;
+  }
+  .footer1 a#allProducts,
+  .footer1 a#company,
+  .footer1 a#Support,
+  .footer1 a#followUs {
+    font-size: 16px;
+  }
+  section .line {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer2 h4 {
+    font-size: 12px;
+    margin-right: 3px;
+  }
+  .footer2 p {
+    font-size: 14px;
+    margin-right: 3px;
+  }
+  .footer2 img {
+    width: 10px;
+    height: 10px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer1 p {
+    width: 200px;
+    font-size: 10px;
+  }
+  .footer1 a#allProducts,
+  .footer1 a#company,
+  .footer1 a#Support,
+  .footer1 a#followUs {
+    font-size: 12px;
+  }
+  section .line {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer2 h4 {
+    font-size: 12px;
+    margin-right: 3px;
+  }
+  .footer2 p {
+    font-size: 14px;
+    margin-right: 3px;
+  }
+  .footer2 img {
+    width: 10px;
+    height: 10px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer1 {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    grid-template-columns: repeat(4, auto);
+    padding-bottom: 50px;
+  }
+  .footer1 div {
+    display: none;
+  }
+  .footer1 a#allProducts,
+  .footer1 a#company,
+  .footer1 a#Support,
+  .footer1 a#followUs {
+    font-size: 12px;
+  }
+  section .line {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer2 .left {
+    margin-left: 10px;
+  }
+  .footer2 .right {
+    margin-right: 10px;
+  }
+  .footer2 h4 {
+    font-size: 12px;
+    margin-right: 3px;
+  }
+  .footer2 p {
+    font-size: 14px;
+    margin-right: 3px;
+  }
+  .footer2 img {
+    width: 10px;
+    height: 10px;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=mediaFooter.css.map */

@@ -1,0 +1,31 @@
+.footer2{
+    width: 100%; 
+    display: flex;
+    background: #F8F9FA;  
+    justify-content: space-between;      
+
+    div{
+        display: flex;                      
+    }
+    .left{
+        margin-left: 60px;
+    }
+    .right{
+        margin-right: 60px;
+    }
+    h4{
+        color: #000;
+        font-family: $headStyle;
+        font-size: 16px;        
+        font-weight: 400; 
+        padding-left: 6px; 
+    }
+    p{
+        color: #000;
+        font-family: $textStyle;
+        font-size: 18px;
+        font-weight: 400;
+        padding-left: 6px;
+        margin-top: 20px;
+    }
+}

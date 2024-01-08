@@ -1,0 +1,6 @@
+.heroImage2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 50px;
+}/*# sourceMappingURL=heroImage2.css.map */

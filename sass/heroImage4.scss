@@ -1,0 +1,16 @@
+.heroImage4{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,auto); 
+    p{
+        width: 569px;
+        color: #000;
+        font-family: $textStyle;
+        font-size: 24px;      
+        font-weight: 400;
+        line-height: 30px;
+    }
+    img{
+        width: 94%;
+    }
+}

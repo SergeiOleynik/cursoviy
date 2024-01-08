@@ -1,0 +1,44 @@
+ .header{  // header start
+    width: 100%;          
+    display: grid;   
+    grid-template-columns: repeat(3,auto); 
+    justify-content: space-around; 
+    font-family: $textStyle;     
+
+    .logo{
+        width: 300px;  
+        margin-top: 20px;            
+    }
+    .text{  
+        ul{            
+            display: grid;
+            grid-template-columns: repeat(4,auto);           
+            margin-top: 0;   
+            list-style: none;             
+        } 
+        li{
+            margin-top: 20px;
+            padding-left: 60px;            
+        }
+        a{            
+            color: #000;           
+            font-size: 14px;          
+            font-weight: 400;
+            text-transform: uppercase;
+        } 
+        a:hover 
+        {           
+            color: red;
+        } 
+              
+    }
+    .headerEnd{ 
+        margin-top: 20px; 
+        margin-left: 350px;     
+        img{
+            margin-left: 30px;
+        }
+    } 
+} // header end
+
+

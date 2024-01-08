@@ -1,0 +1,124 @@
+@media screen and (max-width: 992px) {
+    .footer1 {
+        width: 90%;
+        margin: 0 auto;       
+        p,
+        a{
+            font-size: 12px;
+        }
+       
+        a#allProducts,
+        a#company,
+        a#Support,
+        a#followUs{       
+            font-size: 16px;            
+        } 
+       
+    }
+    section .line{
+        width: 90%;
+        margin: 0 auto;       
+    }
+    .footer2{
+        width: 90%;
+        margin: 0 auto;  
+        h4{
+            font-size: 12px;
+            margin-right: 3px;
+        } 
+        p{
+            font-size: 14px;
+            margin-right: 3px;
+        }   
+        img{
+            width: 10px;
+            height: 10px;
+            margin-top: 20px;
+        } 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer1 {
+        width: 90%;
+        margin: 0 auto;       
+        p{
+            width: 200px;               
+            font-size: 10px;
+        }
+       
+        a#allProducts,
+        a#company,
+        a#Support,
+        a#followUs{       
+            font-size: 12px;            
+        } 
+       
+    }
+    section .line{
+        width: 90%;
+        margin: 0 auto;        
+    }
+    .footer2{
+        width: 90%;
+        margin: 0 auto;  
+        h4{
+            font-size: 12px;
+            margin-right: 3px;
+        } 
+        p{
+            font-size: 14px;
+            margin-right: 3px;
+        }   
+        img{
+            width: 10px;
+            height: 10px;
+            margin-top: 20px;
+        } 
+    }
+}
+@media screen and (max-width: 576px) {
+    .footer1 {
+        width: 90%;
+        margin: 0 auto; 
+        position: relative;
+        grid-template-columns: repeat(4,auto);
+        padding-bottom: 50px;
+        div{
+            display: none;
+        }     
+        a#allProducts,
+        a#company,
+        a#Support,
+        a#followUs{                 
+            font-size: 12px;                     
+        }        
+    }
+    section .line{
+        width: 90%;
+        margin: 0 auto;        
+    }
+    .footer2{
+        width: 90%;
+        margin: 0 auto; 
+        .left{
+            margin-left: 10px;
+        }
+        .right{
+            margin-right: 10px;
+        } 
+        h4{
+            font-size: 12px;
+            margin-right: 3px;
+        } 
+        p{
+            font-size: 14px;
+            margin-right: 3px;
+        }   
+        img{
+            width: 10px;
+            height: 10px;
+            margin-top: 20px;
+        } 
+    }
+}

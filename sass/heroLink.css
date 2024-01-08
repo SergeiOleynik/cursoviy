@@ -1,0 +1,15 @@
+.heroLink1 {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 90px 98px 68px 142px 109px;
+  grid-gap: 20px;
+}
+.heroLink1 button#iPhone,
+.heroLink1 button#charger,
+.heroLink1 button#gift,
+.heroLink1 button#googlePixel,
+.heroLink1 button#keyboard {
+  border-radius: 20px;
+  padding: 10px;
+}/*# sourceMappingURL=heroLink.css.map */

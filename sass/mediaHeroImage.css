@@ -1,0 +1,685 @@
+@media screen and (max-width: 992px) {
+  /*****************************************************************************************************************/
+  .heroImage1 {
+    width: 90%;
+    margin: 10px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 220px);
+    grid-template-areas: "itm1" "itm2" "itm3" "itm4";
+    /*  hero image 1  */
+  }
+  .heroImage1 p {
+    width: 60px;
+    font-size: 12px;
+  }
+  .heroImage1 h3 {
+    width: 240px;
+    font-size: 22px;
+  }
+  .heroImage1 .item1 {
+    height: 100%;
+    grid-area: itm1;
+  }
+  .heroImage1 .item1 img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top: 30px;
+    left: -20px;
+  }
+  .heroImage1 .item1 p#laptop {
+    position: relative;
+    left: 420px;
+    top: -250px;
+  }
+  .heroImage1 .item1 h3#laptop {
+    position: relative;
+    left: 350px;
+    top: -290px;
+  }
+  .heroImage1 .item2 {
+    height: 100%;
+    grid-area: itm2;
+    padding: 0;
+  }
+  .heroImage1 .item2 img {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    top: 60px;
+    left: -560px;
+  }
+  .heroImage1 .item2 p#phone {
+    position: relative;
+    left: -200px;
+    top: -160px;
+  }
+  .heroImage1 .item2 h3#phone {
+    position: relative;
+    left: -260px;
+    top: -200px;
+  }
+  .heroImage1 .item3 {
+    height: 100%;
+    grid-area: itm3;
+  }
+  .heroImage1 .item3 img {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    top: -60px;
+    left: -560px;
+  }
+  .heroImage1 .item3 p#tab {
+    position: relative;
+    left: -200px;
+    top: 70px;
+  }
+  .heroImage1 .item3 h3#tab {
+    position: relative;
+    left: -280px;
+    top: 35px;
+  }
+  .heroImage1 .item4 {
+    grid-area: itm4;
+  }
+  .heroImage1 .item4 img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top: 30px;
+    left: -50px;
+  }
+  .heroImage1 .item4 p#watch {
+    position: relative;
+    bottom: 230px;
+    left: 420px;
+  }
+  .heroImage1 .item4 h3#watch {
+    position: relative;
+    bottom: 265px;
+    left: 360px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage2 {
+    width: 90%;
+    margin: 10px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 220px);
+    position: relative;
+    /*  hero image 2  */
+  }
+  .heroImage2 h3 {
+    position: relative;
+    left: 250px;
+    top: -180px;
+  }
+  .heroImage2 p#style1,
+  .heroImage2 p#style2 {
+    position: relative;
+    top: -190px;
+    left: 250px;
+    font-size: 12px;
+  }
+  .heroImage2 p#macBookPro {
+    position: relative;
+    top: -190px;
+    left: 250px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage3 {
+    width: 90%;
+    margin: 10px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 280px);
+    position: relative;
+    row-gap: 20px;
+    /* hero image 3 */
+  }
+  .heroImage3 .image {
+    width: 100%;
+  }
+  .heroImage3 img#watch {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    right: 400px;
+    bottom: 100px;
+  }
+  .heroImage3 img#mix {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    right: 400px;
+    bottom: 100px;
+  }
+  .heroImage3 img#laptop {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    right: 400px;
+    bottom: 100px;
+  }
+  .heroImage3 p {
+    position: relative;
+    left: 10px;
+    padding-top: 50px;
+  }
+  .heroImage3 h3 {
+    position: relative;
+    left: 10px;
+  }
+  .heroImage3 a#Explore {
+    position: relative;
+    left: 250px;
+    bottom: 140px;
+    font-size: 14px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage4 {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .heroImage4 p {
+    width: 90%;
+    font-size: 16px;
+  }
+  .heroText6,
+  .heroLink1,
+  .heroLink2 {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .heroImage7 {
+    width: 90%;
+  }
+  .heroImage7 div {
+    width: 900px;
+  }
+  .heroImage7 div img {
+    margin-left: 320px;
+  }
+  .heroImage7 h2 {
+    font-size: 32px;
+  }
+  .heroImage7 p {
+    font-size: 12px;
+  }
+}
+/****************************** end media 992 px ******************************/
+@media screen and (max-width: 768px) { /**** media 768 px ****/
+  /*****************************************************************************************************************/
+  .heroImage1 {
+    width: 90%;
+    margin: 10px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 220px);
+    grid-template-areas: "itm1" "itm2" "itm3" "itm4";
+    /*  hero image 1  */
+  }
+  .heroImage1 p {
+    width: 60px;
+    font-size: 12px;
+  }
+  .heroImage1 h3 {
+    width: 240px;
+    font-size: 18px;
+  }
+  .heroImage1 .item1 {
+    height: 100%;
+    grid-area: itm1;
+  }
+  .heroImage1 .item1 img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top: 30px;
+    left: -20px;
+  }
+  .heroImage1 .item1 p#laptop {
+    position: relative;
+    left: 375px;
+    top: -180px;
+  }
+  .heroImage1 .item1 h3#laptop {
+    position: relative;
+    left: 300px;
+    top: -215px;
+  }
+  .heroImage1 .item2 {
+    height: 100%;
+    grid-area: itm2;
+    padding: 0;
+  }
+  .heroImage1 .item2 img {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    top: 60px;
+    left: -420px;
+  }
+  .heroImage1 .item2 p#phone {
+    position: relative;
+    left: -40px;
+    top: -160px;
+  }
+  .heroImage1 .item2 h3#phone {
+    position: relative;
+    left: -110px;
+    top: -200px;
+  }
+  .heroImage1 .item3 {
+    height: 100%;
+    grid-area: itm3;
+  }
+  .heroImage1 .item3 img {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    top: -60px;
+    left: -380px;
+  }
+  .heroImage1 .item3 p#tab {
+    position: relative;
+    left: -40px;
+    top: 70px;
+  }
+  .heroImage1 .item3 h3#tab {
+    position: relative;
+    left: -110px;
+    top: 35px;
+  }
+  .heroImage1 .item4 {
+    grid-area: itm4;
+  }
+  .heroImage1 .item4 img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top: 30px;
+    left: -50px;
+  }
+  .heroImage1 .item4 p#watch {
+    position: relative;
+    bottom: 180px;
+    left: 370px;
+  }
+  .heroImage1 .item4 h3#watch {
+    position: relative;
+    bottom: 210px;
+    left: 310px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage2 {
+    width: 90%;
+    margin: 10px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 220px);
+    position: relative;
+    /*  hero image 2  */
+  }
+  .heroImage2 h3 {
+    position: relative;
+    left: 250px;
+    top: -180px;
+  }
+  .heroImage2 p#style1,
+  .heroImage2 p#style2 {
+    position: relative;
+    top: -190px;
+    left: 250px;
+    font-size: 12px;
+  }
+  .heroImage2 p#macBookPro {
+    position: relative;
+    top: -190px;
+    left: 250px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage3 {
+    width: 90%;
+    margin: 10px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 280px);
+    position: relative;
+    row-gap: 20px;
+    /* hero image 3 */
+  }
+  .heroImage3 .image {
+    width: 90%;
+  }
+  .heroImage3 img#watch {
+    width: 50%;
+    height: 50%;
+    padding-left: 10px;
+    position: relative;
+    right: 100px;
+    bottom: 100px;
+  }
+  .heroImage3 img#mix {
+    width: 50%;
+    height: 50%;
+    padding-left: 10px;
+    position: relative;
+    right: 100px;
+    bottom: 100px;
+  }
+  .heroImage3 img#laptop {
+    width: 50%;
+    height: 50%;
+    padding-left: 20px;
+    position: relative;
+    right: 100px;
+    bottom: 100px;
+  }
+  .heroImage3 p {
+    position: relative;
+    left: 10px;
+    padding-left: 90px;
+    font-size: 10px;
+  }
+  .heroImage3 h3 {
+    position: relative;
+    left: 10px;
+    padding-left: 90px;
+    font-size: 18px;
+  }
+  .heroImage3 a#Explore {
+    position: relative;
+    left: 160px;
+    bottom: 10px;
+    font-size: 12px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage4 {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .heroImage4 p {
+    width: 80%;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .heroText6 {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .heroLink1,
+  .heroLink2 {
+    width: 50%;
+    margin: 10px auto;
+  }
+  .heroImage7 {
+    width: 90%;
+  }
+  .heroImage7 div {
+    width: 700px;
+  }
+  .heroImage7 div img {
+    margin-left: 240px;
+  }
+  .heroImage7 h2 {
+    font-size: 22px;
+  }
+  .heroImage7 p {
+    font-size: 10px;
+  }
+}
+/****************************** end media 768 px******************************/
+@media screen and (max-width: 576px) { /**** end media 576 px ****/
+  /*****************************************************************************************************************/
+  .heroImage1 {
+    width: 90%;
+    margin: 10px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 220px);
+    grid-template-areas: "itm1" "itm2" "itm3" "itm4";
+    /*  hero image 1  */
+  }
+  .heroImage1 p {
+    width: 60px;
+    font-size: 12px;
+  }
+  .heroImage1 h3 {
+    width: 240px;
+    font-size: 18px;
+  }
+  .heroImage1 .item1 {
+    height: 100%;
+    grid-area: itm1;
+  }
+  .heroImage1 .item1 img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top: 50px;
+    left: -50px;
+  }
+  .heroImage1 .item1 p#laptop {
+    position: relative;
+    left: 300px;
+    top: -100px;
+  }
+  .heroImage1 .item1 h3#laptop {
+    position: relative;
+    left: 250px;
+    top: -140px;
+  }
+  .heroImage1 .item2 {
+    height: 100%;
+    grid-area: itm2;
+    padding: 0;
+  }
+  .heroImage1 .item2 img {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    top: 50px;
+    left: -300px;
+  }
+  .heroImage1 .item2 p#phone {
+    position: relative;
+    left: 50px;
+    top: -160px;
+  }
+  .heroImage1 .item2 h3#phone {
+    position: relative;
+    left: -5px;
+    top: -200px;
+  }
+  .heroImage1 .item3 {
+    height: 100%;
+    grid-area: itm3;
+  }
+  .heroImage1 .item3 img {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    top: -60px;
+    left: -280px;
+  }
+  .heroImage1 .item3 p#tab {
+    position: relative;
+    left: 50px;
+    top: 70px;
+  }
+  .heroImage1 .item3 h3#tab {
+    position: relative;
+    left: -20px;
+    top: 30px;
+  }
+  .heroImage1 .item4 {
+    grid-area: itm4;
+  }
+  .heroImage1 .item4 img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top: 60px;
+    left: -60px;
+  }
+  .heroImage1 .item4 p#watch {
+    position: relative;
+    bottom: 100px;
+    left: 290px;
+  }
+  .heroImage1 .item4 h3#watch {
+    position: relative;
+    bottom: 140px;
+    left: 240px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage2 {
+    width: 90%;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 120px);
+    position: relative;
+    grid-gap: 0;
+    /*  hero image 2  */
+  }
+  .heroImage2 h3 {
+    margin-top: 60px;
+    font-size: 15px;
+    position: relative;
+    left: 150px;
+    top: -120px;
+  }
+  .heroImage2 p#style1,
+  .heroImage2 p#style2 {
+    position: relative;
+    top: -130px;
+    left: 150px;
+    font-size: 12px;
+  }
+  .heroImage2 p#macBookPro {
+    position: relative;
+    top: -130px;
+    left: 150px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  .heroImage2 img {
+    width: 55%;
+    height: 55%;
+    position: relative;
+    left: -90px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage3 {
+    width: 90%;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 210px);
+    position: relative;
+    row-gap: 10px;
+    /* hero image 3 */
+  }
+  .heroImage3 .image {
+    width: 90%;
+  }
+  .heroImage3 img#watch {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    right: 100px;
+    bottom: 110px;
+  }
+  .heroImage3 img#mix {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    right: 100px;
+    bottom: 120px;
+  }
+  .heroImage3 img#laptop {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    right: 100px;
+    bottom: 120px;
+  }
+  .heroImage3 p {
+    position: relative;
+    left: 10px;
+    padding-left: 90px;
+    font-size: 10px;
+  }
+  .heroImage3 h3 {
+    position: relative;
+    left: 10px;
+    padding-left: 90px;
+    font-size: 18px;
+  }
+  .heroImage3 a#Explore {
+    width: 100px;
+    padding: 7px;
+    position: relative;
+    left: 120px;
+    bottom: 10px;
+    font-size: 10px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage4 {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .heroImage4 p {
+    width: 85%;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .heroImage4 img {
+    height: 100%;
+  }
+  .heroText6 form#formSearch {
+    width: 450px;
+    height: 15px;
+    margin: 10px;
+  }
+  .heroText6 img {
+    width: 15px;
+    height: 15px;
+  }
+  .heroText6 input {
+    position: relative;
+    top: -4px;
+    font-size: 10px;
+  }
+  .heroLink1 {
+    width: 90%;
+    margin: 20px;
+    grid-template-columns: 70px 70px 58px 120px 90px;
+  }
+  .heroLink1 a {
+    padding: 8px;
+    font-size: 10px;
+  }
+  .heroLink2 {
+    width: 90%;
+    margin: 10px;
+    grid-template-columns: 90px 90px 81px 81px;
+  }
+  .heroLink2 a {
+    padding: 8px;
+    font-size: 10px;
+  }
+  .heroImage7 {
+    width: 90%;
+  }
+  .heroImage7 div {
+    width: 500px;
+  }
+  .heroImage7 div img {
+    margin-left: 140px;
+  }
+  .heroImage7 h2 {
+    font-size: 20px;
+  }
+  .heroImage7 p {
+    font-size: 10px;
+  }
+}
+/****************************** end media 576 ******************************//*# sourceMappingURL=mediaHeroImage.css.map */

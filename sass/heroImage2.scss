@@ -1,0 +1,36 @@
+.heroImage2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);   
+    grid-gap: 50px;
+
+    h3{
+        width: 276px;
+        color: #000;
+        font-family: $headStyle;
+        font-size: 22px;        
+        font-weight: 400;
+        padding-left: 10px;
+    }
+    p#style1{
+        width: 261px;
+        color: #4B4B4B;
+        font-family: $textStyle;
+        font-size: 14px;       
+        font-weight: 400;
+        padding-left: 10px;
+    }
+    p#style2,
+    #macBookPro{
+        color: #000;
+        font-family: $textStyle;
+        font-size: 18px;      
+        font-weight: 400;
+        padding-left: 10px;
+    }
+    p#macBookPro{
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+
+}

@@ -1,0 +1,49 @@
+.heroImage3{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,auto); 
+
+    .image{
+        width: 420px;      
+        background: #F8F9FA;
+        border-radius: 20px;        
+    }
+    p{
+        color: #000; 
+        text-align: center;
+        font-family: $textStyle;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 0;        
+    }
+    h3{
+        margin-top: 0;
+        color: #000;       
+        text-align: center;
+        font-family: $headStyle;
+        font-size: 28px;       
+        font-weight: 400;
+    }
+    a#Explore{
+        display: inline-block;
+        width: 170px;
+        padding: 10px;         
+        margin-left: 10px;
+        border: 1px solid black;
+        border-radius: 20px;             
+        font-family: $textStyle;
+        font-size: 18px;
+        font-weight: 400;
+        color: black;
+        margin-left: 110px;
+    }
+    img#watch{
+        margin-top: 10px;
+        margin-left: 70px;
+    }
+    img#mix,
+    img#laptop{
+        margin-top: 30px;
+        margin-left: 50px;
+    } 
+}

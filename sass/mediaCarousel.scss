@@ -1,0 +1,140 @@
+@media screen and (max-width: 992px) {
+    .carousel-wrapper {
+        width: 90%;
+        height: 300px;
+        margin: 10px auto;
+
+        .carousel-item {
+            h2 {
+                width: 40%;
+                position: absolute;
+                top: -80px;
+                font-size: 35px;
+                line-height: 40px;
+            }
+            p {
+                width: 50%;
+                position: absolute;
+                top: 130px;
+                font-size: 12px;
+                line-height: 17px;
+            }
+            .explore {
+                position: absolute;
+                top: 190px;
+            }
+            img{
+                width: 25%;
+                position: absolute;
+                top: 60px;   
+                right: 110px;
+              }
+
+            .arrow-prev {
+                position: absolute;
+                top: 140px;
+            }
+
+            .arrow-next {
+                position: absolute;
+                top: 140px;
+            }
+        }
+    }
+} /******************************* end media 992px *******************************/
+
+@media screen and (max-width: 768px) {
+    .carousel-wrapper {
+        width: 90%;
+        height: 300px;
+        margin: 10px auto;
+
+        .carousel-item {
+            h2 {
+                width: 40%;
+                position: absolute;
+                top: -80px;
+                font-size: 25px;
+                line-height: 40px;
+            }
+            p {
+                width: 50%;
+                position: absolute;
+                top: 130px;
+                font-size: 10px;
+                line-height: 17px;
+            }
+            .explore {
+                position: absolute;
+                top: 190px;
+            }
+            img{
+                width: 25%;
+                position: absolute;
+                top: 60px;   
+                right: 90px;
+            }
+            .arrow{               
+                padding: 10px;
+            } 
+            .arrow-prev {
+                position: absolute;
+                top: 140px;
+            }
+            .arrow-next {
+                position: absolute;
+                top: 140px;
+            }
+        }
+    }
+} /******************************* end media 768px *******************************/
+
+@media screen and (max-width: 576px) {
+    .carousel-wrapper {
+        width: 90%;
+        height: 300px;
+        margin: 10px auto;
+
+        .carousel-item {
+            h2 {
+                width: 40%;
+                position: absolute;
+                top: -80px;
+                font-size: 20px;
+                line-height: 30px;
+            }
+            p {
+                width: 50%;
+                position: absolute;
+                top: 120px;
+                font-size: 10px;
+                line-height: 17px;
+            }
+            .explore {
+                width: 80%;
+                font-size: 14px;
+                position: absolute;
+                top: 210px;
+                right: 40px;
+            }
+            img{
+                width: 25%;
+                position: absolute;
+                top: 70px;   
+                right: 50px;
+            }
+            .arrow{               
+                padding: 10px;
+            } 
+            .arrow-prev {
+                position: absolute;
+                top: 140px;               
+            }
+
+            .arrow-next {
+                position: absolute;
+                top: 140px;
+            }
+        }
+    }
+}/******************************* end media 576px *******************************/

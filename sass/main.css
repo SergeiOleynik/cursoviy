@@ -1,0 +1,1646 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap");
+.main {
+  width: 1440px;
+  margin: 50px auto;
+}
+
+* a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-around;
+  font-family: "Inter", sans-serif;
+}
+.header .logo {
+  width: 300px;
+  margin-top: 20px;
+}
+.header .text ul {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  margin-top: 0;
+  list-style: none;
+}
+.header .text li {
+  margin-top: 20px;
+  padding-left: 60px;
+}
+.header .text a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.header .text a:hover {
+  color: red;
+}
+.header .headerEnd {
+  margin-top: 20px;
+  margin-left: 350px;
+}
+.header .headerEnd img {
+  margin-left: 30px;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  margin: 20px auto;
+  position: relative;
+  height: 500px;
+  background-color: rgba(202, 199, 199, 0.6156862745);
+  border-radius: 20px;
+}
+.carousel-wrapper .carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.carousel-wrapper h2 {
+  width: 590px;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 58px;
+  line-height: 70px;
+  margin: 120px 0 20px 20px;
+  color: black;
+}
+.carousel-wrapper p {
+  width: 565px;
+  font-family: "Inter", sans-serif;
+  margin: 0 0 30px 20px;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: black;
+}
+.carousel-wrapper .explore {
+  display: inline-block;
+  width: 170px;
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+}
+.carousel-wrapper img {
+  width: 30%;
+  position: absolute;
+  top: 80px;
+  right: 200px;
+}
+.carousel-wrapper .phone {
+  position: absolute;
+  bottom: 400px;
+  left: 10px;
+}
+.carousel-wrapper .arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  padding: 15px;
+}
+.carousel-wrapper .arrow-prev {
+  left: 15px;
+  position: absolute;
+  top: 250px;
+  transform: translateY(-50%) rotate(135deg);
+}
+.carousel-wrapper .arrow-next {
+  right: 15px;
+  position: absolute;
+  top: 250px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+.carousel-wrapper .item-1 {
+  z-index: 2;
+  opacity: 1;
+}
+.carousel-wrapper *:target ~ .item-1 {
+  opacity: 0;
+}
+.carousel-wrapper #item-1:target ~ .item-1 {
+  opacity: 1;
+}
+.carousel-wrapper #item-2:target ~ .item-2,
+.carousel-wrapper #item-3:target ~ .item-3 {
+  z-index: 3;
+  opacity: 1;
+}
+
+.heroText1,
+.heroText2,
+.heroText3,
+.heroText4,
+.heroText6 {
+  width: 100%;
+  margin: 50px auto;
+}
+.heroText1 h2,
+.heroText2 h2,
+.heroText3 h2,
+.heroText4 h2,
+.heroText6 h2 {
+  width: 780px;
+  margin: 0 auto;
+  color: #000;
+  text-align: center;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+}
+.heroText1 p,
+.heroText2 p,
+.heroText3 p,
+.heroText4 p,
+.heroText6 p {
+  width: 628px;
+  margin: 10px auto;
+  color: #000;
+  text-align: center;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+}
+
+.heroText2 p,
+.heroText3 p,
+.heroText4 p {
+  font-size: 13px;
+}
+
+.heroText5 {
+  width: 100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.heroText5 p {
+  width: 79px;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px; /* 120% */
+  text-transform: capitalize;
+}
+.heroText5 img {
+  margin-top: 15px;
+}
+
+.heroText6 form#formSearch {
+  width: 650px;
+  margin: 10px auto;
+  border: 2px solid grey;
+  border-radius: 25px;
+  padding: 8px;
+}
+.heroText6 input {
+  border: none;
+  outline: none;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 12px;
+  position: relative;
+  top: -10px;
+}
+
+section .line {
+  width: 100%;
+  border-bottom: 4px solid blue;
+}
+
+.heroImage1 {
+  width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, 300px);
+  grid-template-areas: "itm1  itm2 itm3" "itm1  itm2 itm3" "itm4 .  .";
+  gap: 20px;
+}
+.heroImage1 .grid {
+  display: grid;
+}
+.heroImage1 .color {
+  background-color: rgba(228, 222, 222, 0.6156862745);
+  border-radius: 20px;
+  padding-left: 40px;
+  animation: bgColor 5s infinite alternate;
+}
+@keyframes bgColor {
+  0% {
+    background-color: rgba(228, 222, 222, 0.6156862745);
+  }
+  50% {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+  100% {
+    background-color: rgba(0, 0, 255, 0.5);
+  }
+}
+.heroImage1 p {
+  width: 60px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.heroImage1 h3 {
+  width: 240px;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+}
+.heroImage1 .item1 {
+  height: 85%;
+  grid-area: itm1;
+}
+.heroImage1 .item1 p#laptop {
+  position: relative;
+  bottom: 20px;
+  left: 400px;
+}
+.heroImage1 .item1 h3#laptop {
+  position: relative;
+  left: 280px;
+  bottom: 60px;
+}
+.heroImage1 .item2 {
+  height: 85%;
+  grid-area: itm2;
+  grid-row-end: 4;
+  justify-content: end;
+  padding-top: 100px;
+}
+.heroImage1 .item2 p#phone {
+  position: relative;
+  left: 90px;
+}
+.heroImage1 .item2 h3#phone {
+  position: relative;
+  left: 40px;
+  bottom: 120px;
+}
+.heroImage1 .item3 {
+  height: 95%;
+  grid-area: itm3;
+  grid-row-end: 4;
+  justify-content: end;
+}
+.heroImage1 .item3 p#tab {
+  position: relative;
+  left: 100px;
+  top: 140px;
+}
+.heroImage1 .item3 h3#tab {
+  position: relative;
+  left: 20px;
+}
+.heroImage1 .item4 {
+  grid-area: itm4;
+}
+.heroImage1 .item4 p#watch {
+  position: relative;
+  bottom: 125px;
+  left: 460px;
+}
+.heroImage1 .item4 h3#watch {
+  position: relative;
+  bottom: 170px;
+  left: 390px;
+}
+
+.heroImage2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+}
+.heroImage2 h3 {
+  width: 276px;
+  color: #000;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+.heroImage2 p#style1 {
+  width: 261px;
+  color: #4B4B4B;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+.heroImage2 p#style2,
+.heroImage2 #macBookPro {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+.heroImage2 p#macBookPro {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.heroImage3 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+.heroImage3 .image {
+  width: 420px;
+  background: #F8F9FA;
+  border-radius: 20px;
+}
+.heroImage3 p {
+  color: #000;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.heroImage3 h3 {
+  margin-top: 0;
+  color: #000;
+  text-align: center;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+.heroImage3 a#Explore {
+  display: inline-block;
+  width: 170px;
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  margin-left: 110px;
+}
+.heroImage3 img#watch {
+  margin-top: 10px;
+  margin-left: 70px;
+}
+.heroImage3 img#mix,
+.heroImage3 img#laptop {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.heroImage4 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+.heroImage4 p {
+  width: 569px;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.heroImage4 img {
+  width: 94%;
+}
+
+.heroLink1 {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 90px 98px 68px 142px 109px;
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.heroLink1 a,
+.heroLink2 a {
+  border: 1px solid gray;
+  border-radius: 20px;
+  border-color: none;
+  padding: 10px;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.heroLink2 {
+  width: 100%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 118px 109px 91px 89px;
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.heroImage7 {
+  width: 100%;
+  margin: 50px auto;
+  display: grid;
+  justify-content: center;
+}
+.heroImage7 div {
+  width: 935px;
+  border-radius: 16px;
+  background: #DCE5E2;
+  padding-bottom: 50px;
+}
+.heroImage7 h2 {
+  color: #000;
+  text-align: center;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.heroImage7 p {
+  margin-top: 0;
+  color: #000;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.heroImage7 img {
+  width: 230px;
+  margin-left: 350px;
+}
+.heroImage7 form#btn {
+  width: 285px;
+  margin: 10px auto;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+.heroImage7 input {
+  border: none;
+  outline: none;
+  background: #DCE5E2;
+}
+.heroImage7 input#email {
+  width: 187px;
+  margin-left: 16px;
+}
+.heroImage7 input#submit {
+  width: 74px;
+  border-radius: 0 20px 20px 0;
+  background-color: grey;
+  color: white;
+  padding: 12px;
+}
+
+.footer1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: space-around;
+  background: #F8F9FA;
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+.footer1 .row {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  row-gap: 15px;
+}
+.footer1 p,
+.footer1 a {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+.footer1 a#allProducts,
+.footer1 a#company,
+.footer1 a#Support,
+.footer1 a#followUs {
+  color: #000;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+.footer1 p {
+  width: 300px;
+}
+
+.footer2 {
+  width: 100%;
+  display: flex;
+  background: #F8F9FA;
+  justify-content: space-between;
+}
+.footer2 div {
+  display: flex;
+}
+.footer2 .left {
+  margin-left: 60px;
+}
+.footer2 .right {
+  margin-right: 60px;
+}
+.footer2 h4 {
+  color: #000;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 6px;
+}
+.footer2 p {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 6px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    width: 992px;
+  }
+  .header {
+    width: 100%;
+  }
+  .header .logo {
+    width: 200px;
+    margin-left: 15px;
+  }
+  .header .text ul {
+    width: 385px;
+    gap: 5px;
+  }
+  .header .text ul li {
+    padding: 0;
+  }
+  .header .headerEnd {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  .header .headerEnd img {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    width: 768px;
+  }
+  .header {
+    width: 90%;
+    grid-template-columns: auto;
+    justify-content: left;
+  }
+  .header .logo {
+    margin-left: 60px;
+  }
+  .header .text {
+    grid-template-columns: auto;
+  }
+  .header .text ul {
+    grid-template-columns: auto;
+  }
+  .header .text ul li {
+    padding: 0;
+    margin-left: 25px;
+  }
+  .header .headerEnd {
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main {
+    width: 576px;
+  }
+  .header {
+    width: 90%;
+    grid-template-columns: auto;
+    justify-content: left;
+  }
+  .header .logo {
+    margin-left: 60px;
+  }
+  .header .text {
+    grid-template-columns: auto;
+  }
+  .header .text ul {
+    grid-template-columns: auto;
+  }
+  .header .text ul li {
+    padding: 0;
+    margin-left: 25px;
+  }
+  .header .headerEnd {
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .carousel-wrapper {
+    width: 90%;
+    height: 300px;
+    margin: 10px auto;
+  }
+  .carousel-wrapper .carousel-item h2 {
+    width: 40%;
+    position: absolute;
+    top: -80px;
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .carousel-wrapper .carousel-item p {
+    width: 50%;
+    position: absolute;
+    top: 130px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .carousel-wrapper .carousel-item .explore {
+    position: absolute;
+    top: 190px;
+  }
+  .carousel-wrapper .carousel-item img {
+    width: 25%;
+    position: absolute;
+    top: 60px;
+    right: 110px;
+  }
+  .carousel-wrapper .carousel-item .arrow-prev {
+    position: absolute;
+    top: 140px;
+  }
+  .carousel-wrapper .carousel-item .arrow-next {
+    position: absolute;
+    top: 140px;
+  }
+} /******************************* end media 992px *******************************/
+@media screen and (max-width: 768px) {
+  .carousel-wrapper {
+    width: 90%;
+    height: 300px;
+    margin: 10px auto;
+  }
+  .carousel-wrapper .carousel-item h2 {
+    width: 40%;
+    position: absolute;
+    top: -80px;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .carousel-wrapper .carousel-item p {
+    width: 50%;
+    position: absolute;
+    top: 130px;
+    font-size: 10px;
+    line-height: 17px;
+  }
+  .carousel-wrapper .carousel-item .explore {
+    position: absolute;
+    top: 190px;
+  }
+  .carousel-wrapper .carousel-item img {
+    width: 25%;
+    position: absolute;
+    top: 60px;
+    right: 90px;
+  }
+  .carousel-wrapper .carousel-item .arrow {
+    padding: 10px;
+  }
+  .carousel-wrapper .carousel-item .arrow-prev {
+    position: absolute;
+    top: 140px;
+  }
+  .carousel-wrapper .carousel-item .arrow-next {
+    position: absolute;
+    top: 140px;
+  }
+} /******************************* end media 768px *******************************/
+@media screen and (max-width: 576px) {
+  .carousel-wrapper {
+    width: 90%;
+    height: 300px;
+    margin: 10px auto;
+  }
+  .carousel-wrapper .carousel-item h2 {
+    width: 40%;
+    position: absolute;
+    top: -80px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .carousel-wrapper .carousel-item p {
+    width: 50%;
+    position: absolute;
+    top: 120px;
+    font-size: 10px;
+    line-height: 17px;
+  }
+  .carousel-wrapper .carousel-item .explore {
+    width: 80%;
+    font-size: 14px;
+    position: absolute;
+    top: 210px;
+    right: 40px;
+  }
+  .carousel-wrapper .carousel-item img {
+    width: 25%;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+  }
+  .carousel-wrapper .carousel-item .arrow {
+    padding: 10px;
+  }
+  .carousel-wrapper .carousel-item .arrow-prev {
+    position: absolute;
+    top: 140px;
+  }
+  .carousel-wrapper .carousel-item .arrow-next {
+    position: absolute;
+    top: 140px;
+  }
+} /******************************* end media 576px *******************************/
+@media screen and (max-width: 992px) {
+  .heroText1,
+  .heroText2,
+  .heroText3,
+  .heroText4,
+  .heroText6 {
+    width: 90%;
+    margin: 10px auto;
+    padding-left: 30px;
+  }
+  .heroText1 h2,
+  .heroText2 h2,
+  .heroText3 h2,
+  .heroText4 h2,
+  .heroText6 h2 {
+    margin-top: 20px;
+    font-size: 32px;
+  }
+  .heroText1 p,
+  .heroText2 p,
+  .heroText3 p,
+  .heroText4 p,
+  .heroText6 p {
+    margin-left: 120px;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .heroText1,
+  .heroText2,
+  .heroText3,
+  .heroText4,
+  .heroText6 {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .heroText1 h2,
+  .heroText2 h2,
+  .heroText3 h2,
+  .heroText4 h2,
+  .heroText6 h2 {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 22px;
+  }
+  .heroText1 p,
+  .heroText2 p,
+  .heroText3 p,
+  .heroText4 p,
+  .heroText6 p {
+    width: 80%;
+    text-align: left;
+    margin: 0;
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  /*****************************************************************************************************************/
+  .heroImage1 {
+    width: 90%;
+    margin: 10px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 220px);
+    grid-template-areas: "itm1" "itm2" "itm3" "itm4";
+    /*  hero image 1  */
+  }
+  .heroImage1 p {
+    width: 60px;
+    font-size: 12px;
+  }
+  .heroImage1 h3 {
+    width: 240px;
+    font-size: 22px;
+  }
+  .heroImage1 .item1 {
+    height: 100%;
+    grid-area: itm1;
+  }
+  .heroImage1 .item1 img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top: 30px;
+    left: -20px;
+  }
+  .heroImage1 .item1 p#laptop {
+    position: relative;
+    left: 420px;
+    top: -250px;
+  }
+  .heroImage1 .item1 h3#laptop {
+    position: relative;
+    left: 350px;
+    top: -290px;
+  }
+  .heroImage1 .item2 {
+    height: 100%;
+    grid-area: itm2;
+    padding: 0;
+  }
+  .heroImage1 .item2 img {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    top: 60px;
+    left: -560px;
+  }
+  .heroImage1 .item2 p#phone {
+    position: relative;
+    left: -200px;
+    top: -160px;
+  }
+  .heroImage1 .item2 h3#phone {
+    position: relative;
+    left: -260px;
+    top: -200px;
+  }
+  .heroImage1 .item3 {
+    height: 100%;
+    grid-area: itm3;
+  }
+  .heroImage1 .item3 img {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    top: -60px;
+    left: -560px;
+  }
+  .heroImage1 .item3 p#tab {
+    position: relative;
+    left: -200px;
+    top: 70px;
+  }
+  .heroImage1 .item3 h3#tab {
+    position: relative;
+    left: -280px;
+    top: 35px;
+  }
+  .heroImage1 .item4 {
+    grid-area: itm4;
+  }
+  .heroImage1 .item4 img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top: 30px;
+    left: -50px;
+  }
+  .heroImage1 .item4 p#watch {
+    position: relative;
+    bottom: 230px;
+    left: 420px;
+  }
+  .heroImage1 .item4 h3#watch {
+    position: relative;
+    bottom: 265px;
+    left: 360px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage2 {
+    width: 90%;
+    margin: 10px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 220px);
+    position: relative;
+    /*  hero image 2  */
+  }
+  .heroImage2 h3 {
+    position: relative;
+    left: 250px;
+    top: -180px;
+  }
+  .heroImage2 p#style1,
+  .heroImage2 p#style2 {
+    position: relative;
+    top: -190px;
+    left: 250px;
+    font-size: 12px;
+  }
+  .heroImage2 p#macBookPro {
+    position: relative;
+    top: -190px;
+    left: 250px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage3 {
+    width: 90%;
+    margin: 10px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 280px);
+    position: relative;
+    row-gap: 20px;
+    /* hero image 3 */
+  }
+  .heroImage3 .image {
+    width: 100%;
+  }
+  .heroImage3 img#watch {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    right: 400px;
+    bottom: 100px;
+  }
+  .heroImage3 img#mix {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    right: 400px;
+    bottom: 100px;
+  }
+  .heroImage3 img#laptop {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    right: 400px;
+    bottom: 100px;
+  }
+  .heroImage3 p {
+    position: relative;
+    left: 10px;
+    padding-top: 50px;
+  }
+  .heroImage3 h3 {
+    position: relative;
+    left: 10px;
+  }
+  .heroImage3 a#Explore {
+    position: relative;
+    left: 250px;
+    bottom: 140px;
+    font-size: 14px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage4 {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .heroImage4 p {
+    width: 90%;
+    font-size: 16px;
+  }
+  .heroText6,
+  .heroLink1,
+  .heroLink2 {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .heroImage7 {
+    width: 90%;
+  }
+  .heroImage7 div {
+    width: 900px;
+  }
+  .heroImage7 div img {
+    margin-left: 320px;
+  }
+  .heroImage7 h2 {
+    font-size: 32px;
+  }
+  .heroImage7 p {
+    font-size: 12px;
+  }
+}
+/****************************** end media 992 px ******************************/
+@media screen and (max-width: 768px) { /**** media 768 px ****/
+  /*****************************************************************************************************************/
+  .heroImage1 {
+    width: 90%;
+    margin: 10px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 220px);
+    grid-template-areas: "itm1" "itm2" "itm3" "itm4";
+    /*  hero image 1  */
+  }
+  .heroImage1 p {
+    width: 60px;
+    font-size: 12px;
+  }
+  .heroImage1 h3 {
+    width: 240px;
+    font-size: 18px;
+  }
+  .heroImage1 .item1 {
+    height: 100%;
+    grid-area: itm1;
+  }
+  .heroImage1 .item1 img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top: 30px;
+    left: -20px;
+  }
+  .heroImage1 .item1 p#laptop {
+    position: relative;
+    left: 375px;
+    top: -180px;
+  }
+  .heroImage1 .item1 h3#laptop {
+    position: relative;
+    left: 300px;
+    top: -215px;
+  }
+  .heroImage1 .item2 {
+    height: 100%;
+    grid-area: itm2;
+    padding: 0;
+  }
+  .heroImage1 .item2 img {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    top: 60px;
+    left: -420px;
+  }
+  .heroImage1 .item2 p#phone {
+    position: relative;
+    left: -40px;
+    top: -160px;
+  }
+  .heroImage1 .item2 h3#phone {
+    position: relative;
+    left: -110px;
+    top: -200px;
+  }
+  .heroImage1 .item3 {
+    height: 100%;
+    grid-area: itm3;
+  }
+  .heroImage1 .item3 img {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    top: -60px;
+    left: -380px;
+  }
+  .heroImage1 .item3 p#tab {
+    position: relative;
+    left: -40px;
+    top: 70px;
+  }
+  .heroImage1 .item3 h3#tab {
+    position: relative;
+    left: -110px;
+    top: 35px;
+  }
+  .heroImage1 .item4 {
+    grid-area: itm4;
+  }
+  .heroImage1 .item4 img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top: 30px;
+    left: -50px;
+  }
+  .heroImage1 .item4 p#watch {
+    position: relative;
+    bottom: 180px;
+    left: 370px;
+  }
+  .heroImage1 .item4 h3#watch {
+    position: relative;
+    bottom: 210px;
+    left: 310px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage2 {
+    width: 90%;
+    margin: 10px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 220px);
+    position: relative;
+    /*  hero image 2  */
+  }
+  .heroImage2 h3 {
+    position: relative;
+    left: 250px;
+    top: -180px;
+  }
+  .heroImage2 p#style1,
+  .heroImage2 p#style2 {
+    position: relative;
+    top: -190px;
+    left: 250px;
+    font-size: 12px;
+  }
+  .heroImage2 p#macBookPro {
+    position: relative;
+    top: -190px;
+    left: 250px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage3 {
+    width: 90%;
+    margin: 10px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 280px);
+    position: relative;
+    row-gap: 20px;
+    /* hero image 3 */
+  }
+  .heroImage3 .image {
+    width: 90%;
+  }
+  .heroImage3 img#watch {
+    width: 50%;
+    height: 50%;
+    padding-left: 10px;
+    position: relative;
+    right: 100px;
+    bottom: 100px;
+  }
+  .heroImage3 img#mix {
+    width: 50%;
+    height: 50%;
+    padding-left: 10px;
+    position: relative;
+    right: 100px;
+    bottom: 100px;
+  }
+  .heroImage3 img#laptop {
+    width: 50%;
+    height: 50%;
+    padding-left: 20px;
+    position: relative;
+    right: 100px;
+    bottom: 100px;
+  }
+  .heroImage3 p {
+    position: relative;
+    left: 10px;
+    padding-left: 90px;
+    font-size: 10px;
+  }
+  .heroImage3 h3 {
+    position: relative;
+    left: 10px;
+    padding-left: 90px;
+    font-size: 18px;
+  }
+  .heroImage3 a#Explore {
+    position: relative;
+    left: 160px;
+    bottom: 10px;
+    font-size: 12px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage4 {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .heroImage4 p {
+    width: 80%;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .heroText6 {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .heroLink1,
+  .heroLink2 {
+    width: 50%;
+    margin: 10px auto;
+  }
+  .heroImage7 {
+    width: 90%;
+  }
+  .heroImage7 div {
+    width: 700px;
+  }
+  .heroImage7 div img {
+    margin-left: 240px;
+  }
+  .heroImage7 h2 {
+    font-size: 22px;
+  }
+  .heroImage7 p {
+    font-size: 10px;
+  }
+}
+/****************************** end media 768 px******************************/
+@media screen and (max-width: 576px) { /**** end media 576 px ****/
+  /*****************************************************************************************************************/
+  .heroImage1 {
+    width: 90%;
+    margin: 10px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 220px);
+    grid-template-areas: "itm1" "itm2" "itm3" "itm4";
+    /*  hero image 1  */
+  }
+  .heroImage1 p {
+    width: 60px;
+    font-size: 12px;
+  }
+  .heroImage1 h3 {
+    width: 240px;
+    font-size: 18px;
+  }
+  .heroImage1 .item1 {
+    height: 100%;
+    grid-area: itm1;
+  }
+  .heroImage1 .item1 img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top: 50px;
+    left: -50px;
+  }
+  .heroImage1 .item1 p#laptop {
+    position: relative;
+    left: 300px;
+    top: -100px;
+  }
+  .heroImage1 .item1 h3#laptop {
+    position: relative;
+    left: 250px;
+    top: -140px;
+  }
+  .heroImage1 .item2 {
+    height: 100%;
+    grid-area: itm2;
+    padding: 0;
+  }
+  .heroImage1 .item2 img {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    top: 50px;
+    left: -300px;
+  }
+  .heroImage1 .item2 p#phone {
+    position: relative;
+    left: 50px;
+    top: -160px;
+  }
+  .heroImage1 .item2 h3#phone {
+    position: relative;
+    left: -5px;
+    top: -200px;
+  }
+  .heroImage1 .item3 {
+    height: 100%;
+    grid-area: itm3;
+  }
+  .heroImage1 .item3 img {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    top: -60px;
+    left: -280px;
+  }
+  .heroImage1 .item3 p#tab {
+    position: relative;
+    left: 50px;
+    top: 70px;
+  }
+  .heroImage1 .item3 h3#tab {
+    position: relative;
+    left: -20px;
+    top: 30px;
+  }
+  .heroImage1 .item4 {
+    grid-area: itm4;
+  }
+  .heroImage1 .item4 img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top: 60px;
+    left: -60px;
+  }
+  .heroImage1 .item4 p#watch {
+    position: relative;
+    bottom: 100px;
+    left: 290px;
+  }
+  .heroImage1 .item4 h3#watch {
+    position: relative;
+    bottom: 140px;
+    left: 240px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage2 {
+    width: 90%;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 120px);
+    position: relative;
+    grid-gap: 0;
+    /*  hero image 2  */
+  }
+  .heroImage2 h3 {
+    margin-top: 60px;
+    font-size: 15px;
+    position: relative;
+    left: 150px;
+    top: -120px;
+  }
+  .heroImage2 p#style1,
+  .heroImage2 p#style2 {
+    position: relative;
+    top: -130px;
+    left: 150px;
+    font-size: 12px;
+  }
+  .heroImage2 p#macBookPro {
+    position: relative;
+    top: -130px;
+    left: 150px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  .heroImage2 img {
+    width: 55%;
+    height: 55%;
+    position: relative;
+    left: -90px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage3 {
+    width: 90%;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 210px);
+    position: relative;
+    row-gap: 10px;
+    /* hero image 3 */
+  }
+  .heroImage3 .image {
+    width: 90%;
+  }
+  .heroImage3 img#watch {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    right: 100px;
+    bottom: 110px;
+  }
+  .heroImage3 img#mix {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    right: 100px;
+    bottom: 120px;
+  }
+  .heroImage3 img#laptop {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    right: 100px;
+    bottom: 120px;
+  }
+  .heroImage3 p {
+    position: relative;
+    left: 10px;
+    padding-left: 90px;
+    font-size: 10px;
+  }
+  .heroImage3 h3 {
+    position: relative;
+    left: 10px;
+    padding-left: 90px;
+    font-size: 18px;
+  }
+  .heroImage3 a#Explore {
+    width: 100px;
+    padding: 7px;
+    position: relative;
+    left: 120px;
+    bottom: 10px;
+    font-size: 10px;
+  }
+  /*****************************************************************************************************************/
+  .heroImage4 {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .heroImage4 p {
+    width: 85%;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .heroImage4 img {
+    height: 100%;
+  }
+  .heroText6 form#formSearch {
+    width: 450px;
+    height: 15px;
+    margin: 10px;
+  }
+  .heroText6 img {
+    width: 15px;
+    height: 15px;
+  }
+  .heroText6 input {
+    position: relative;
+    top: -4px;
+    font-size: 10px;
+  }
+  .heroLink1 {
+    width: 90%;
+    margin: 20px;
+    grid-template-columns: 70px 70px 58px 120px 90px;
+  }
+  .heroLink1 a {
+    padding: 8px;
+    font-size: 10px;
+  }
+  .heroLink2 {
+    width: 90%;
+    margin: 10px;
+    grid-template-columns: 90px 90px 81px 81px;
+  }
+  .heroLink2 a {
+    padding: 8px;
+    font-size: 10px;
+  }
+  .heroImage7 {
+    width: 90%;
+  }
+  .heroImage7 div {
+    width: 500px;
+  }
+  .heroImage7 div img {
+    margin-left: 140px;
+  }
+  .heroImage7 h2 {
+    font-size: 20px;
+  }
+  .heroImage7 p {
+    font-size: 10px;
+  }
+}
+/****************************** end media 576 ******************************/
+@media screen and (max-width: 992px) {
+  .footer1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer1 p,
+  .footer1 a {
+    font-size: 12px;
+  }
+  .footer1 a#allProducts,
+  .footer1 a#company,
+  .footer1 a#Support,
+  .footer1 a#followUs {
+    font-size: 16px;
+  }
+  section .line {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer2 h4 {
+    font-size: 12px;
+    margin-right: 3px;
+  }
+  .footer2 p {
+    font-size: 14px;
+    margin-right: 3px;
+  }
+  .footer2 img {
+    width: 10px;
+    height: 10px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer1 p {
+    width: 200px;
+    font-size: 10px;
+  }
+  .footer1 a#allProducts,
+  .footer1 a#company,
+  .footer1 a#Support,
+  .footer1 a#followUs {
+    font-size: 12px;
+  }
+  section .line {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer2 h4 {
+    font-size: 12px;
+    margin-right: 3px;
+  }
+  .footer2 p {
+    font-size: 14px;
+    margin-right: 3px;
+  }
+  .footer2 img {
+    width: 10px;
+    height: 10px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer1 {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    grid-template-columns: repeat(4, auto);
+    padding-bottom: 50px;
+  }
+  .footer1 div {
+    display: none;
+  }
+  .footer1 a#allProducts,
+  .footer1 a#company,
+  .footer1 a#Support,
+  .footer1 a#followUs {
+    font-size: 12px;
+  }
+  section .line {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer2 .left {
+    margin-left: 10px;
+  }
+  .footer2 .right {
+    margin-right: 10px;
+  }
+  .footer2 h4 {
+    font-size: 12px;
+    margin-right: 3px;
+  }
+  .footer2 p {
+    font-size: 14px;
+    margin-right: 3px;
+  }
+  .footer2 img {
+    width: 10px;
+    height: 10px;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
