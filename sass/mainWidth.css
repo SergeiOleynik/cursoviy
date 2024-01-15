@@ -2,8 +2,11 @@
   width: 1440px;
   margin: 50px auto;
 }
-
-* a {
+.main * a:hover {
+  color: blue;
+  text-transform: uppercase;
+}
+.main * a {
   text-decoration: none;
   text-align: center;
 }/*# sourceMappingURL=mainWidth.css.map */

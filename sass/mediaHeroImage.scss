@@ -1,5 +1,7 @@
 @media screen and (max-width: 992px) {
-
+    .main{
+        width: 992px;
+    }
     /*****************************************************************************************************************/
     .heroImage1 {
         width: 90%;
@@ -238,10 +240,12 @@
 
         div {
             width: 900px;
-            img{
-               margin-left: 320px;
+
+            img {
+                margin-left: 320px;
             }
         }
+
         h2 {
             font-size: 32px;
         }
@@ -255,8 +259,10 @@
 
 /****************************** end media 992 px ******************************/
 
-@media screen and (max-width: 768px) { /**** media 768 px ****/
-
+@media screen and (max-width: 768px) {
+    .main{
+        width: 768px;
+    }
     /*****************************************************************************************************************/
     .heroImage1 {
         width: 90%;
@@ -379,6 +385,7 @@
                 bottom: 210px;
                 left: 310px;
             }
+
         }
     }
 
@@ -475,7 +482,7 @@
             bottom: 10px;
             font-size: 12px;
         }
-       
+
     }
 
     /*****************************************************************************************************************/
@@ -489,10 +496,12 @@
             line-height: 20px;
         }
     }
-    .heroText6{
+
+    .heroText6 {
         margin: 0;
         margin-bottom: 20px;
     }
+
     .heroLink1,
     .heroLink2 {
         width: 50%;
@@ -501,15 +510,19 @@
 
     .heroImage7 {
         width: 90%;
+
         div {
             width: 700px;
-            img{
-               margin-left: 240px;
+
+            img {
+                margin-left: 240px;
             }
         }
+
         h2 {
             font-size: 22px;
         }
+
         p {
             font-size: 10px;
         }
@@ -519,8 +532,10 @@
 
 /****************************** end media 768 px******************************/
 
-@media screen and (max-width: 576px) { /**** end media 576 px ****/
-
+@media screen and (max-width: 576px) {
+    .main{
+        width: 576px;
+    }
     /*****************************************************************************************************************/
     .heroImage1 {
         width: 90%;
@@ -554,11 +569,13 @@
                 top: 50px;
                 left: -50px;
             }
+
             p#laptop {
                 position: relative;
                 left: 300px;
                 top: -100px;
             }
+
             h3#laptop {
                 position: relative;
                 left: 250px;
@@ -578,11 +595,13 @@
                 top: 50px;
                 left: -300px;
             }
+
             p#phone {
                 position: relative;
                 left: 50px;
                 top: -160px;
             }
+
             h3#phone {
                 position: relative;
                 left: -5px;
@@ -602,11 +621,13 @@
                 top: -60px;
                 left: -280px;
             }
+
             p#tab {
                 position: relative;
                 left: 50px;
                 top: 70px;
             }
+
             h3#tab {
                 position: relative;
                 left: -20px;
@@ -624,11 +645,13 @@
                 top: 60px;
                 left: -60px;
             }
+
             p#watch {
                 position: relative;
                 bottom: 100px;
                 left: 290px;
             }
+
             h3#watch {
                 position: relative;
                 bottom: 140px;
@@ -639,52 +662,53 @@
 
     /*****************************************************************************************************************/
     .heroImage2 {
-        width: 90%;        
+        width: 90%;
+       // margin: 10px auto;
         grid-template-columns: auto;
-        grid-template-rows: repeat(4, 120px);
+        grid-template-rows: repeat(4, 160px);
         position: relative;
-        grid-gap: 0;
+        gap: 0;
 
-        h3 {            
-            margin-top: 60px;
-            font-size: 15px; 
+        h3 {
             position: relative;
             left: 150px;
-            top: -120px;
+            top: -100px;
         }
 
         /*  hero image 2  */
         p#style1,
-        p#style2 {          
+        p#style2 {
             position: relative;
-            top: -130px;
+            top: -110px;
             left: 150px;
             font-size: 12px;
         }
 
-        p#macBookPro {          
+        p#macBookPro {
             position: relative;
-            top: -130px;
+            top: -110px;
             left: 150px;
             font-size: 12px;
             padding: 0 10px;
         }
-        img{
-            width: 55%;
-            height: 55%;
+
+        img {
+            width: 50%;
+            height: 50%;
             position: relative;
-            left: -90px;         
+            top: 20px;
+            left: -60px;
         }
     }
 
     /*****************************************************************************************************************/
     .heroImage3 {
         width: 90%;
-        //margin: 10px auto;
+        margin: 10px auto;
         grid-template-columns: auto;
-        grid-template-rows: repeat(3, 210px);
+        grid-template-rows: repeat(3, 260px);
         position: relative;
-        row-gap: 10px;
+        row-gap: 20px;
 
         .image {
             width: 90%;
@@ -692,26 +716,29 @@
 
         img#watch {
             width: 50%;
-            height: 50%;            
+            height: 50%;
+            padding-left: 10px;
             position: relative;
             right: 100px;
-            bottom: 110px;
+            bottom: 120px;
         }
 
         img#mix {
             width: 50%;
-            height: 50%;           
+            height: 50%;
+            padding-left: 10px;
             position: relative;
-            right: 100px;
+            right: 80px;
             bottom: 120px;
         }
 
         /* hero image 3 */
         img#laptop {
             width: 50%;
-            height: 50%;            
+            height: 50%;
+            padding-left: 20px;
             position: relative;
-            right: 100px;
+            right: 80px;
             bottom: 120px;
         }
 
@@ -730,14 +757,13 @@
         }
 
         a#Explore {
-            width: 100px;
-            padding: 7px;
+            width: 90px;
             position: relative;
             left: 120px;
-            bottom: 10px;
-            font-size: 10px;
+            bottom: -40px;
+            font-size: 12px;
         }
-       
+
     }
 
     /*****************************************************************************************************************/
@@ -746,60 +772,39 @@
         margin: 10px auto;
 
         p {
-            width: 85%;
+            width: 80%;
             font-size: 10px;
             line-height: 20px;
         }
-        img{
-           height: 100%;
-        }
     }
-    .heroText6{
-        form#formSearch{
-            width: 450px; 
-            height: 15px;
-            margin: 10px;           
-        }  
-        img{
-            width: 15px;
-            height: 15px;
-        }
-        input{
-            position: relative;
-            top: -4px;
-            font-size: 10px;        
-        }
+
+    .heroText6 {
+        margin: 0;
+        margin-bottom: 20px;
     }
-    .heroLink1{
-        width: 90%;
-        margin: 20px;        
-        grid-template-columns: 70px 70px 58px 120px 90px;
-        a{
-            padding: 8px;
-            font-size: 10px;
-        }
+
+    .heroLink1 {
+        grid-template-columns: 80px 88px 68px 142px 90px;
+        margin: 10px auto;
     }
-    .heroLink2{
-        width: 90%;
-        margin: 10px;        
-        grid-template-columns: 90px 90px 81px 81px;
-        a{
-            padding: 8px;
-            font-size: 10px;
-        }
+
+    .heroLink2 {
+        grid-template-columns: 118px 109px 91px 89px;
+        margin: 10px auto;
     }
 
     .heroImage7 {
-        width: 90%;
+        //width: 90%;
         div {
             width: 500px;
-            img{
-               margin-left: 140px;
+            img {
+                margin-left: 130px;
             }
         }
         h2 {
-            font-size: 20px;
+            font-size: 22px;
         }
+
         p {
             font-size: 10px;
         }

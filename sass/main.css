@@ -4,8 +4,11 @@
   width: 1440px;
   margin: 50px auto;
 }
-
-* a {
+.main * a:hover {
+  color: blue;
+  text-transform: uppercase;
+}
+.main * a {
   text-decoration: none;
   text-align: center;
 }
@@ -37,15 +40,15 @@
   font-weight: 400;
   text-transform: uppercase;
 }
-.header .text a:hover {
-  color: red;
-}
 .header .headerEnd {
   margin-top: 20px;
   margin-left: 350px;
 }
 .header .headerEnd img {
   margin-left: 30px;
+}
+.header a:hover {
+  color: blue;
 }
 
 .carousel-wrapper {
@@ -228,8 +231,7 @@ section .line {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, 300px);
-  grid-template-areas: "itm1  itm2 itm3" "itm1  itm2 itm3" "itm4 .  .";
+  grid-template-areas: "itm1  itm2 itm3" "itm1  itm2 itm3" "itm4  itm2 itm3";
   gap: 20px;
 }
 .heroImage1 .grid {
@@ -266,7 +268,6 @@ section .line {
   line-height: 38px;
 }
 .heroImage1 .item1 {
-  height: 85%;
   grid-area: itm1;
 }
 .heroImage1 .item1 p#laptop {
@@ -280,14 +281,17 @@ section .line {
   bottom: 60px;
 }
 .heroImage1 .item2 {
-  height: 85%;
   grid-area: itm2;
-  grid-row-end: 4;
   justify-content: end;
   padding-top: 100px;
 }
+.heroImage1 .item2 img {
+  position: relative;
+  top: 90px;
+}
 .heroImage1 .item2 p#phone {
   position: relative;
+  top: 50px;
   left: 90px;
 }
 .heroImage1 .item2 h3#phone {
@@ -296,15 +300,13 @@ section .line {
   bottom: 120px;
 }
 .heroImage1 .item3 {
-  height: 95%;
   grid-area: itm3;
-  grid-row-end: 4;
   justify-content: end;
 }
 .heroImage1 .item3 p#tab {
   position: relative;
   left: 100px;
-  top: 140px;
+  top: 180px;
 }
 .heroImage1 .item3 h3#tab {
   position: relative;
@@ -313,9 +315,13 @@ section .line {
 .heroImage1 .item4 {
   grid-area: itm4;
 }
+.heroImage1 .item4 img {
+  position: relative;
+  top: 90px;
+}
 .heroImage1 .item4 p#watch {
   position: relative;
-  bottom: 125px;
+  bottom: 130px;
   left: 460px;
 }
 .heroImage1 .item4 h3#watch {
@@ -407,11 +413,14 @@ section .line {
   margin-top: 30px;
   margin-left: 50px;
 }
+.heroImage3 a#Explore:hover {
+  color: blue;
+}
 
 .heroImage4 {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: auto auto;
 }
 .heroImage4 p {
   width: 569px;
@@ -508,12 +517,16 @@ section .line {
   background-color: grey;
   color: white;
   padding: 12px;
+  cursor: pointer;
+}
+.heroImage7 input#submit:hover {
+  color: blue;
 }
 
 .footer1 {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: 300px 180px 180px 180px 180px;
   justify-content: space-around;
   background: #F8F9FA;
   padding-top: 50px;
@@ -541,8 +554,11 @@ section .line {
   font-size: 22px;
   font-weight: 400;
 }
-.footer1 p {
-  width: 300px;
+.footer1 a#allProducts:hover,
+.footer1 a#company:hover,
+.footer1 a#Support:hover,
+.footer1 a#followUs:hover {
+  color: blue;
 }
 
 .footer2 {
@@ -565,15 +581,14 @@ section .line {
   font-family: "Readex Pro", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  padding-left: 6px;
+  padding-left: 2px;
 }
 .footer2 p {
   color: #000;
   font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  padding-left: 6px;
-  margin-top: 20px;
+  padding-left: 2px;
 }
 
 @media screen and (max-width: 992px) {
@@ -781,7 +796,7 @@ section .line {
     position: absolute;
     top: 140px;
   }
-} /******************************* end media 576px *******************************/
+}
 @media screen and (max-width: 992px) {
   .heroText1,
   .heroText2,
@@ -840,7 +855,19 @@ section .line {
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 576px) {
+  .heroText6 h2 {
+    width: 500px;
+    text-align: center;
+  }
+  .heroText6 form#formSearch {
+    width: 500px;
+  }
+}
 @media screen and (max-width: 992px) {
+  .main {
+    width: 992px;
+  }
   /*****************************************************************************************************************/
   .heroImage1 {
     width: 90%;
@@ -1051,7 +1078,10 @@ section .line {
   }
 }
 /****************************** end media 992 px ******************************/
-@media screen and (max-width: 768px) { /**** media 768 px ****/
+@media screen and (max-width: 768px) {
+  .main {
+    width: 768px;
+  }
   /*****************************************************************************************************************/
   .heroImage1 {
     width: 90%;
@@ -1272,7 +1302,10 @@ section .line {
   }
 }
 /****************************** end media 768 px******************************/
-@media screen and (max-width: 576px) { /**** end media 576 px ****/
+@media screen and (max-width: 576px) {
+  .main {
+    width: 576px;
+  }
   /*****************************************************************************************************************/
   .heroImage1 {
     width: 90%;
@@ -1378,45 +1411,45 @@ section .line {
   .heroImage2 {
     width: 90%;
     grid-template-columns: auto;
-    grid-template-rows: repeat(4, 120px);
+    grid-template-rows: repeat(4, 160px);
     position: relative;
-    grid-gap: 0;
+    gap: 0;
     /*  hero image 2  */
   }
   .heroImage2 h3 {
-    margin-top: 60px;
-    font-size: 15px;
     position: relative;
     left: 150px;
-    top: -120px;
+    top: -100px;
   }
   .heroImage2 p#style1,
   .heroImage2 p#style2 {
     position: relative;
-    top: -130px;
+    top: -110px;
     left: 150px;
     font-size: 12px;
   }
   .heroImage2 p#macBookPro {
     position: relative;
-    top: -130px;
+    top: -110px;
     left: 150px;
     font-size: 12px;
     padding: 0 10px;
   }
   .heroImage2 img {
-    width: 55%;
-    height: 55%;
+    width: 50%;
+    height: 50%;
     position: relative;
-    left: -90px;
+    top: 20px;
+    left: -60px;
   }
   /*****************************************************************************************************************/
   .heroImage3 {
     width: 90%;
+    margin: 10px auto;
     grid-template-columns: auto;
-    grid-template-rows: repeat(3, 210px);
+    grid-template-rows: repeat(3, 260px);
     position: relative;
-    row-gap: 10px;
+    row-gap: 20px;
     /* hero image 3 */
   }
   .heroImage3 .image {
@@ -1425,22 +1458,25 @@ section .line {
   .heroImage3 img#watch {
     width: 50%;
     height: 50%;
+    padding-left: 10px;
     position: relative;
     right: 100px;
-    bottom: 110px;
+    bottom: 120px;
   }
   .heroImage3 img#mix {
     width: 50%;
     height: 50%;
+    padding-left: 10px;
     position: relative;
-    right: 100px;
+    right: 80px;
     bottom: 120px;
   }
   .heroImage3 img#laptop {
     width: 50%;
     height: 50%;
+    padding-left: 20px;
     position: relative;
-    right: 100px;
+    right: 80px;
     bottom: 120px;
   }
   .heroImage3 p {
@@ -1456,12 +1492,11 @@ section .line {
     font-size: 18px;
   }
   .heroImage3 a#Explore {
-    width: 100px;
-    padding: 7px;
+    width: 90px;
     position: relative;
     left: 120px;
-    bottom: 10px;
-    font-size: 10px;
+    bottom: -40px;
+    font-size: 12px;
   }
   /*****************************************************************************************************************/
   .heroImage4 {
@@ -1469,56 +1504,30 @@ section .line {
     margin: 10px auto;
   }
   .heroImage4 p {
-    width: 85%;
+    width: 80%;
     font-size: 10px;
     line-height: 20px;
   }
-  .heroImage4 img {
-    height: 100%;
-  }
-  .heroText6 form#formSearch {
-    width: 450px;
-    height: 15px;
-    margin: 10px;
-  }
-  .heroText6 img {
-    width: 15px;
-    height: 15px;
-  }
-  .heroText6 input {
-    position: relative;
-    top: -4px;
-    font-size: 10px;
+  .heroText6 {
+    margin: 0;
+    margin-bottom: 20px;
   }
   .heroLink1 {
-    width: 90%;
-    margin: 20px;
-    grid-template-columns: 70px 70px 58px 120px 90px;
-  }
-  .heroLink1 a {
-    padding: 8px;
-    font-size: 10px;
+    grid-template-columns: 80px 88px 68px 142px 90px;
+    margin: 10px auto;
   }
   .heroLink2 {
-    width: 90%;
-    margin: 10px;
-    grid-template-columns: 90px 90px 81px 81px;
-  }
-  .heroLink2 a {
-    padding: 8px;
-    font-size: 10px;
-  }
-  .heroImage7 {
-    width: 90%;
+    grid-template-columns: 118px 109px 91px 89px;
+    margin: 10px auto;
   }
   .heroImage7 div {
     width: 500px;
   }
   .heroImage7 div img {
-    margin-left: 140px;
+    margin-left: 130px;
   }
   .heroImage7 h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
   .heroImage7 p {
     font-size: 10px;
@@ -1526,13 +1535,18 @@ section .line {
 }
 /****************************** end media 576 ******************************/
 @media screen and (max-width: 992px) {
+  .main {
+    width: 992px;
+  }
   .footer1 {
     width: 90%;
     margin: 0 auto;
+    grid-template-columns: 220px 160px 160px 160px 160px;
   }
   .footer1 p,
   .footer1 a {
     font-size: 12px;
+    margin-left: 25px;
   }
   .footer1 a#allProducts,
   .footer1 a#company,
@@ -1563,13 +1577,17 @@ section .line {
   }
 }
 @media screen and (max-width: 768px) {
-  .footer1 {
-    width: 90%;
-    margin: 0 auto;
+  .main {
+    width: 768px;
   }
-  .footer1 p {
-    width: 200px;
-    font-size: 10px;
+  .footer1 {
+    width: 85%;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 160px);
+    padding-left: 50px;
+  }
+  .footer1 div {
+    display: none;
   }
   .footer1 a#allProducts,
   .footer1 a#company,
@@ -1600,12 +1618,11 @@ section .line {
   }
 }
 @media screen and (max-width: 576px) {
+  .main {
+    width: 576px;
+  }
   .footer1 {
     width: 90%;
-    margin: 0 auto;
-    position: relative;
-    grid-template-columns: repeat(4, auto);
-    padding-bottom: 50px;
   }
   .footer1 div {
     display: none;
@@ -1617,11 +1634,10 @@ section .line {
     font-size: 12px;
   }
   section .line {
-    width: 90%;
-    margin: 0 auto;
+    width: 98%;
   }
   .footer2 {
-    width: 90%;
+    width: 98%;
     margin: 0 auto;
   }
   .footer2 .left {

@@ -1,4 +1,7 @@
 @media screen and (max-width: 992px) {
+  .main {
+    width: 992px;
+  }
   /*****************************************************************************************************************/
   .heroImage1 {
     width: 90%;
@@ -209,7 +212,10 @@
   }
 }
 /****************************** end media 992 px ******************************/
-@media screen and (max-width: 768px) { /**** media 768 px ****/
+@media screen and (max-width: 768px) {
+  .main {
+    width: 768px;
+  }
   /*****************************************************************************************************************/
   .heroImage1 {
     width: 90%;
@@ -430,7 +436,10 @@
   }
 }
 /****************************** end media 768 px******************************/
-@media screen and (max-width: 576px) { /**** end media 576 px ****/
+@media screen and (max-width: 576px) {
+  .main {
+    width: 576px;
+  }
   /*****************************************************************************************************************/
   .heroImage1 {
     width: 90%;
@@ -536,45 +545,45 @@
   .heroImage2 {
     width: 90%;
     grid-template-columns: auto;
-    grid-template-rows: repeat(4, 120px);
+    grid-template-rows: repeat(4, 160px);
     position: relative;
-    grid-gap: 0;
+    gap: 0;
     /*  hero image 2  */
   }
   .heroImage2 h3 {
-    margin-top: 60px;
-    font-size: 15px;
     position: relative;
     left: 150px;
-    top: -120px;
+    top: -100px;
   }
   .heroImage2 p#style1,
   .heroImage2 p#style2 {
     position: relative;
-    top: -130px;
+    top: -110px;
     left: 150px;
     font-size: 12px;
   }
   .heroImage2 p#macBookPro {
     position: relative;
-    top: -130px;
+    top: -110px;
     left: 150px;
     font-size: 12px;
     padding: 0 10px;
   }
   .heroImage2 img {
-    width: 55%;
-    height: 55%;
+    width: 50%;
+    height: 50%;
     position: relative;
-    left: -90px;
+    top: 20px;
+    left: -60px;
   }
   /*****************************************************************************************************************/
   .heroImage3 {
     width: 90%;
+    margin: 10px auto;
     grid-template-columns: auto;
-    grid-template-rows: repeat(3, 210px);
+    grid-template-rows: repeat(3, 260px);
     position: relative;
-    row-gap: 10px;
+    row-gap: 20px;
     /* hero image 3 */
   }
   .heroImage3 .image {
@@ -583,22 +592,25 @@
   .heroImage3 img#watch {
     width: 50%;
     height: 50%;
+    padding-left: 10px;
     position: relative;
     right: 100px;
-    bottom: 110px;
+    bottom: 120px;
   }
   .heroImage3 img#mix {
     width: 50%;
     height: 50%;
+    padding-left: 10px;
     position: relative;
-    right: 100px;
+    right: 80px;
     bottom: 120px;
   }
   .heroImage3 img#laptop {
     width: 50%;
     height: 50%;
+    padding-left: 20px;
     position: relative;
-    right: 100px;
+    right: 80px;
     bottom: 120px;
   }
   .heroImage3 p {
@@ -614,12 +626,11 @@
     font-size: 18px;
   }
   .heroImage3 a#Explore {
-    width: 100px;
-    padding: 7px;
+    width: 90px;
     position: relative;
     left: 120px;
-    bottom: 10px;
-    font-size: 10px;
+    bottom: -40px;
+    font-size: 12px;
   }
   /*****************************************************************************************************************/
   .heroImage4 {
@@ -627,56 +638,30 @@
     margin: 10px auto;
   }
   .heroImage4 p {
-    width: 85%;
+    width: 80%;
     font-size: 10px;
     line-height: 20px;
   }
-  .heroImage4 img {
-    height: 100%;
-  }
-  .heroText6 form#formSearch {
-    width: 450px;
-    height: 15px;
-    margin: 10px;
-  }
-  .heroText6 img {
-    width: 15px;
-    height: 15px;
-  }
-  .heroText6 input {
-    position: relative;
-    top: -4px;
-    font-size: 10px;
+  .heroText6 {
+    margin: 0;
+    margin-bottom: 20px;
   }
   .heroLink1 {
-    width: 90%;
-    margin: 20px;
-    grid-template-columns: 70px 70px 58px 120px 90px;
-  }
-  .heroLink1 a {
-    padding: 8px;
-    font-size: 10px;
+    grid-template-columns: 80px 88px 68px 142px 90px;
+    margin: 10px auto;
   }
   .heroLink2 {
-    width: 90%;
-    margin: 10px;
-    grid-template-columns: 90px 90px 81px 81px;
-  }
-  .heroLink2 a {
-    padding: 8px;
-    font-size: 10px;
-  }
-  .heroImage7 {
-    width: 90%;
+    grid-template-columns: 118px 109px 91px 89px;
+    margin: 10px auto;
   }
   .heroImage7 div {
     width: 500px;
   }
   .heroImage7 div img {
-    margin-left: 140px;
+    margin-left: 130px;
   }
   .heroImage7 h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
   .heroImage7 p {
     font-size: 10px;

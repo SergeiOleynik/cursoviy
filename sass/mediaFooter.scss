@@ -1,10 +1,15 @@
 @media screen and (max-width: 992px) {
+    .main{
+        width: 992px;      
+     }
     .footer1 {
         width: 90%;
-        margin: 0 auto;       
+        margin: 0 auto;   
+        grid-template-columns: 220px 160px 160px 160px 160px;     
         p,
         a{
             font-size: 12px;
+            margin-left: 25px;
         }
        
         a#allProducts,
@@ -12,8 +17,8 @@
         a#Support,
         a#followUs{       
             font-size: 16px;            
-        } 
-       
+        }
+     
     }
     section .line{
         width: 90%;
@@ -39,12 +44,17 @@
 }
 
 @media screen and (max-width: 768px) {
+    .main{
+        width: 768px;      
+     }
     .footer1 {
-        width: 90%;
-        margin: 0 auto;       
-        p{
-            width: 200px;               
-            font-size: 10px;
+        width: 85%;
+        margin: 0 auto;  
+        grid-template-columns: repeat(4,160px);  
+        padding-left: 50px;          
+ 
+        div{
+            display: none;
         }
        
         a#allProducts,
@@ -77,36 +87,40 @@
         } 
     }
 }
+
 @media screen and (max-width: 576px) {
+    .main{
+        width: 576px;       
+    } 
+     
     .footer1 {
         width: 90%;
-        margin: 0 auto; 
-        position: relative;
-        grid-template-columns: repeat(4,auto);
-        padding-bottom: 50px;
+   
         div{
             display: none;
-        }     
+        }
+
         a#allProducts,
         a#company,
         a#Support,
-        a#followUs{                 
-            font-size: 12px;                     
-        }        
+        a#followUs{       
+            font-size: 12px;            
+        } 
+       
     }
     section .line{
-        width: 90%;
-        margin: 0 auto;        
+        width: 98%;
+    
     }
     .footer2{
-        width: 90%;
-        margin: 0 auto; 
+        width: 98%;
+        margin: 0 auto;  
         .left{
             margin-left: 10px;
         }
         .right{
             margin-right: 10px;
-        } 
+        }
         h4{
             font-size: 12px;
             margin-right: 3px;

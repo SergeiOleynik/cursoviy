@@ -3,11 +3,11 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3,auto);
-    grid-template-rows: repeat(3,300px);
+   // grid-template-rows: repeat(3,300px);
     grid-template-areas: 
     "itm1  itm2 itm3" 
     "itm1  itm2 itm3" 
-    "itm4 .  ." 
+    "itm4  itm2 itm3" 
     ;
     gap: 20px;  
 
@@ -47,27 +47,29 @@
     }
     
     .item1{
-       height: 85%;
-       grid-area: itm1;   
-            p#laptop{
-                position: relative;
-                bottom: 20px;
-                left: 400px;      
-            } 
-            h3#laptop{
-                position: relative;
-                left: 280px;
-                bottom: 60px;
-            }           
+        grid-area: itm1;   
+        p#laptop{
+            position: relative;
+            bottom: 20px;
+            left: 400px;      
+        } 
+        h3#laptop{
+            position: relative;
+            left: 280px;
+            bottom: 60px;
+        }           
     }
     .item2{ 
-        height: 85%;      
         grid-area: itm2;  
-        grid-row-end: 4;
         justify-content: end;
         padding-top: 100px;
+        img{
+            position: relative;
+            top: 90px;
+        }
         p#phone{
             position: relative;
+            top: 50px;
             left: 90px;             
         }
         h3#phone{
@@ -77,14 +79,12 @@
         }   
     }
     .item3{ 
-        height: 95%;  
         grid-area: itm3;
-        grid-row-end: 4; 
         justify-content: end;
         p#tab{
             position: relative;
             left: 100px;
-            top: 140px; 
+            top: 180px; 
         }
         h3#tab{
             position: relative;
@@ -93,10 +93,14 @@
     }
 
     .item4{         
-        grid-area: itm4;          
+        grid-area: itm4;  
+        img{
+            position: relative;
+            top: 90px;
+        }        
         p#watch{
             position: relative;
-            bottom: 125px;        
+            bottom: 130px; 
             left: 460px;     
         }
         h3#watch{

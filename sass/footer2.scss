@@ -5,7 +5,7 @@
     justify-content: space-between;      
 
     div{
-        display: flex;                      
+        display: flex;                   
     }
     .left{
         margin-left: 60px;
@@ -18,14 +18,13 @@
         font-family: $headStyle;
         font-size: 16px;        
         font-weight: 400; 
-        padding-left: 6px; 
+        padding-left: 2px; 
     }
     p{
         color: #000;
         font-family: $textStyle;
         font-size: 18px;
         font-weight: 400;
-        padding-left: 6px;
-        margin-top: 20px;
+        padding-left: 2px;
     }
 }

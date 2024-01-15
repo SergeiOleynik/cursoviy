@@ -55,4 +55,13 @@
     font-size: 10px;
     margin-bottom: 20px;
   }
+}
+@media screen and (max-width: 576px) {
+  .heroText6 h2 {
+    width: 500px;
+    text-align: center;
+  }
+  .heroText6 form#formSearch {
+    width: 500px;
+  }
 }/*# sourceMappingURL=mediaText.css.map */
